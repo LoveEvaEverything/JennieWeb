@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	    button{
+	    	width: 100px;
+	        height: 100px;
+		    border-radius: 50%;
+		    background: black;
+	    }
+	 </style>
+
+	 <script type="text/javascript">
+	 	function redButtonSelected() {
+
+	 		document.getElementById('red_id').style.backgroundColor = "red";
+	 		document.getElementById('yellow_id').style.backgroundColor = "black";
+	 		document.getElementById('green_id').style.backgroundColor = "black";
+
+	 	}
+
+	 	function yellowButtonSelected() {
+
+	 		document.getElementById('yellow_id').style.backgroundColor = "yellow";
+	 		document.getElementById('red_id').style.backgroundColor = "black";
+	 		document.getElementById('green_id').style.backgroundColor = "black";
+	 	}
+
+	 	function greenButtonSelected() {
+
+	 		document.getElementById('green_id').style.backgroundColor = "green";
+	 		document.getElementById('yellow_id').style.backgroundColor = "black";
+	 		document.getElementById('red_id').style.backgroundColor = "black";
+	 	}
+
+
+	 	function buttonSelected(target, light02 , light03, targetColor)
+	 	{
+	 		document.getElementById(target).style.backgroundColor = targetColor;
+	 		document.getElementById(light02).style.backgroundColor = "black";
+	 		document.getElementById(light03).style.backgroundColor = "black";
+
+	 	}
+	 </script>
+
+</head>
+<body>
+       <button id="red_id" onclick="buttonSelected('red_id','yellow_id','green_id', 'red')"></button>
+       <br>
+       <button id="yellow_id" onclick="yellowButtonSelected('yellow_id','red_id','green_id', 'red')"></button>
+       <br>
+       <button id="green_id" onclick="greenButtonSelected('green_id','yellow_id','red_id', 'red')"></button>
+       <br>
+</body>
+</html>

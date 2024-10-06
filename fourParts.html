@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			margin:0;
+			height:100%;
+		}
+		html{
+			height: 100%;
+		}
+
+		#title_frame_id{
+            	background-color:#E3DBEC;
+            	height: 7%;
+
+		}
+		#menu_frame_id{
+            	background-color:#C9BADA;
+            	height: 77%;
+            	width:15%;
+            	float: left;
+			
+		}
+		#content_frame_id{
+            	background-color:#B099CB ;
+            	height: 77%;
+			
+		}
+		#about_frame_id{
+			background-color:#9678B6;
+			height :16%;
+
+			 
+		}
+		#title_id{
+			text-align: center;
+			font_size: 12px;
+			color:#321e4c;
+			font-family: cursive;
+			padding-top: 10px;
+
+
+
+
+		}
+		#about_frame_id{
+			text-align: center;
+			font_size: 12px;
+			color:#321e4c;
+			font-family: fantasy;
+			padding-top: 20px;
+
+
+		}
+		 #item_id{
+		 	text-align: center;
+		 	padding-top: 20%;
+		 	font-family:  cursive;
+		 	font-size: 13px;
+
+		 }
+
+		 iframe{
+		 	height: 100%;
+		 	width: 85% ;
+
+		 }
+
+		 #item_id:hover{
+		 	background-color: #B29FC7;
+
+		 }
+
+	</style>
+
+
+	<script type="text/javascript">
+		function showTrafficLight(){
+			document.getElementById('iframe_id').src = "Traffic_light.html";
+		}
+		function showPlusOne(){
+			document.getElementById('iframe_id').src = "anything.html";
+		}
+		function showInput(){
+			document.getElementById('iframe_id').src = "input_001.html";
+		}
+		function showNews(){
+			document.getElementById('iframe_id').src = "lesson2homework.html";
+		}
+	</script>
+</head>
+<body>
+      <div id="title_frame_id">
+      	<div id="title_id">Hello</div>
+      </div>
+
+      <div id="menu_frame_id">
+           <div id="items_id">
+           	    <div id="item_id" onclick="showNews()">News</div>
+                <div id="item_id" onclick="showTrafficLight()">TrafficLight</div>
+                <div id="item_id" onclick="showPlusOne()">PlusOne</div>
+                <div id="item_id" onclick="showInput()">Input</div>
+           </div>
+      </div>
+      <div id="content_frame_id">
+      	<iframe src="fake_news.html" frameborder = 0 id="iframe_id"></iframe>
+      </div>
+
+      <div id="about_frame_id">
+      	<div id="about_frame_id">Presented by Me</div>
+      
+      </div>
+</body>
+</html>
